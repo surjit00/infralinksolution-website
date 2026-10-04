@@ -154,7 +154,7 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
       setFormError(status, message);
       button.disabled = false;
       button.removeAttribute("aria-busy");
-      button.textContent = form.dataset.leadForm === "contact" ? "Send Enquiry →" : "Get Your Free IT Assessment →";
+      button.textContent = form.dataset.leadForm === "contact" ? "Send Enquiry →" : "Get Your Free IT Health Check →";
     } finally {
       clearTimeout(timeout);
     }
