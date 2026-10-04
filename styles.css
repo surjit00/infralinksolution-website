@@ -345,3 +345,38 @@
   .next-steps{grid-template-columns:1fr}
   .next-steps div{justify-content:flex-start}
 }
+
+
+/* --- CTA typography/alignment correction --- */
+.cta-panel{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:42px;
+  max-width:1000px;
+  margin:0 auto;
+}
+.cta-panel h2{
+  max-width:820px;
+  margin:10px 0 14px;
+  text-wrap:balance;
+}
+.cta-panel .lead{
+  max-width:760px;
+  margin:0;
+}
+.cta-panel .btn{
+  justify-self:end;
+}
+.cta-panel-section{
+  overflow:hidden;
+}
+@media(max-width:800px){
+  .cta-panel{
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+  .cta-panel .btn{
+    justify-self:start;
+  }
+}
