@@ -1501,3 +1501,62 @@ footer p{font-size:15px;line-height:1.7}
   .services-page .service-tile{transition:none}
   .services-page .service-tile:hover{transform:none}
 }
+
+/* Site-wide visual accents: subtle graphics without adding clutter */
+.hero,.page-hero{
+  position:relative;
+  overflow:hidden;
+}
+.hero:after,.page-hero:after{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:-150px;
+  top:-190px;
+  border:1px solid rgba(24,184,212,.16);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 42px rgba(24,184,212,.035),
+    0 0 0 84px rgba(24,184,212,.022);
+  pointer-events:none;
+}
+.hero:before,.page-hero:before{
+  content:"";
+  position:absolute;
+  width:9px;
+  height:9px;
+  right:18%;
+  top:24%;
+  border-radius:50%;
+  background:#18b8d4;
+  box-shadow:
+    24px 18px 0 rgba(24,184,212,.28),
+    -30px 34px 0 rgba(24,184,212,.18),
+    46px -22px 0 rgba(24,184,212,.16);
+  pointer-events:none;
+}
+.hero>* ,.page-hero>*{position:relative;z-index:1}
+.section-head{
+  position:relative;
+}
+.section-head:after{
+  content:"";
+  display:block;
+  width:42px;
+  height:3px;
+  margin-top:18px;
+  border-radius:3px;
+  background:#18b8d4;
+}
+.card,.price,.service-card{
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.card:hover,.price:hover,.service-card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 32px rgba(11,31,51,.09);
+}
+@media(prefers-reduced-motion:reduce){
+  .card,.price,.service-card{transition:none}
+  .card:hover,.price:hover,.service-card:hover{transform:none}
+}
