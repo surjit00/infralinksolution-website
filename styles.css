@@ -917,3 +917,38 @@ header .navlinks .navcta{
 @media(max-width:600px){
   header .nav{min-height:70px}
 }
+
+/* Services header — match the exact Home header proportions */
+.services-page header{
+  height:auto;
+  min-height:82px;
+}
+.services-page header .nav{
+  min-height:82px;
+  gap:25px;
+}
+.services-page header .logo img{
+  width:220px;
+  max-height:76px;
+}
+.services-page header .navlinks{
+  gap:25px;
+  font-weight:700;
+}
+.services-page header .navlinks a{
+  font-size:16px;
+}
+.services-page header .navlinks .navcta{
+  font-size:16px!important;
+  padding:11px 16px;
+  border-radius:8px;
+  margin-left:0;
+}
+@media(max-width:900px){
+  .services-page header .logo img{width:205px;max-height:72px}
+}
+@media(max-width:600px){
+  .services-page header{min-height:70px}
+  .services-page header .nav{min-height:70px}
+  .services-page header .logo img{width:190px;max-height:68px}
+}
