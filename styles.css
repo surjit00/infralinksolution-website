@@ -952,3 +952,35 @@ header .navlinks .navcta{
   .services-page header .nav{min-height:70px}
   .services-page header .logo img{width:190px;max-height:68px}
 }
+
+/* Services page CTA buttons — use the same standard scale as the Home page */
+.services-page .services-hero-copy .btn,
+.services-page .cta-panel .btn,
+.services-page .actions .btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:58px;
+  padding:16px 28px;
+  border-radius:10px;
+  font-size:18px;
+  line-height:1.2;
+  font-weight:800;
+  white-space:nowrap;
+}
+.services-page .services-hero-copy .btn{
+  margin-top:22px;
+  background:var(--cyan);
+  color:var(--navy);
+}
+@media(max-width:600px){
+  .services-page .services-hero-copy .btn,
+  .services-page .cta-panel .btn,
+  .services-page .actions .btn{
+    width:100%;
+    min-height:54px;
+    padding:14px 20px;
+    font-size:16px;
+    white-space:normal;
+  }
+}
