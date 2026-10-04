@@ -1739,3 +1739,26 @@ header .navlinks .navcta{
   height:44px;
   margin-bottom:14px;
 }
+
+
+/* Footer brand — transparent dark-theme logo */
+footer .footer-logo{
+  content:url("assets/infralink-logo-footer.svg");
+  width:330px!important;
+  max-width:100%;
+  height:auto!important;
+  max-height:none!important;
+  object-fit:contain!important;
+  background:transparent!important;
+  padding:0!important;
+  border-radius:0!important;
+  display:block;
+}
+footer .footer-grid>div:first-child{
+  padding-top:2px;
+}
+@media(max-width:600px){
+  footer .footer-logo{
+    width:300px!important;
+  }
+}
