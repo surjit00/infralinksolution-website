@@ -101,6 +101,17 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
       websiteField.value = value;
     }
 
+    const requiredServices = form.querySelector("[data-required-services]");
+    if (requiredServices) {
+      const selectedServices = form.querySelectorAll("input[name='services']:checked");
+      if (!selectedServices.length) {
+        setFormError(status, "Please select at least one IT service you need.");
+        const firstService = form.querySelector("input[name='services']");
+        if (firstService) firstService.focus();
+        return;
+      }
+    }
+
     const data = Object.fromEntries(new FormData(form).entries());
     const fullName = [data.first_name, data.last_name].filter(Boolean).join(" ").trim();
     data.name = fullName || String(data.name || "").trim();
