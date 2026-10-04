@@ -1,0 +1,1 @@
+window.INFRALINK_CONFIG={leadApiUrl:"/api/leads",companyEmail:"info@infralinksolution.com"};
