@@ -71,7 +71,7 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
     email.value = email.value.replace(/\u00a0/g, " ").trim().replace(/\s+/g, "");
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-      setFormError(status, "Please enter a valid business email address, for example name@company.com.");
+      setFormError(status, "Please enter a valid email address, for example name@company.com.");
       email.focus();
       return;
     }
@@ -141,7 +141,7 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
       setFormError(status, message);
       button.disabled = false;
       button.removeAttribute("aria-busy");
-      button.textContent = "Get Your Free IT Assessment →";
+      button.textContent = form.dataset.leadForm === "contact" ? "Send Enquiry →" : "Get Your Free IT Assessment →";
     } finally {
       clearTimeout(timeout);
     }
