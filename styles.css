@@ -881,3 +881,9 @@ footer .footer-brand img{width:340px;height:auto;max-width:100%;object-fit:conta
   .site-footer .footer-brand img,
   footer .footer-brand img{width:280px}
 }
+
+/* Final logo sizing after cropped logo artwork */
+.logo img{width:220px;max-height:76px}
+footer .footer-logo{width:340px;max-width:100%;height:auto;max-height:none;padding:14px 20px}
+@media(max-width:900px){.logo img{width:205px;max-height:72px}footer .footer-logo{width:320px}}
+@media(max-width:600px){.logo img{width:190px;max-height:68px}footer .footer-logo{width:290px}}
