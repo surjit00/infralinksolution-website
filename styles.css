@@ -1424,3 +1424,80 @@ footer p{font-size:15px;line-height:1.7}
   .services-page .service-visual{height:180px}
   .services-page .service-tile-body li{white-space:normal}
 }
+
+/* Premium service-card graphics */
+.services-page .service-visual{
+  background:#0b1f33!important;
+  isolation:isolate;
+}
+.services-page .service-visual:after{
+  content:"";
+  position:absolute;
+  width:210px;
+  height:210px;
+  right:-75px;
+  top:-90px;
+  border:1px solid rgba(24,184,212,.28);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:1;
+}
+.services-page .service-visual:before{
+  content:"";
+  position:absolute;
+  width:145px;
+  height:145px;
+  left:-55px;
+  bottom:-75px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:50%;
+  pointer-events:none;
+  z-index:1;
+}
+.services-page .service-visual img{
+  position:relative;
+  z-index:0;
+  filter:saturate(.92) contrast(1.04);
+}
+.services-page .service-visual:has(img):after{
+  background:linear-gradient(135deg,rgba(11,31,51,.02),rgba(11,31,51,.28));
+}
+.services-page .service-icon-badge{
+  left:18px!important;
+  bottom:18px!important;
+  width:58px!important;
+  height:58px!important;
+  border-radius:16px!important;
+  background:linear-gradient(145deg,#18b8d4,#0f9fbc)!important;
+  color:#fff!important;
+  border:1px solid rgba(255,255,255,.55);
+  box-shadow:0 10px 24px rgba(11,31,51,.28)!important;
+}
+.services-page .service-icon-badge svg{
+  width:31px!important;
+  height:31px!important;
+  stroke-width:2.2!important;
+}
+.services-page .service-visual-label{
+  right:14px!important;
+  left:auto!important;
+  bottom:14px!important;
+  background:rgba(7,24,39,.76)!important;
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.12);
+  padding:6px 9px!important;
+  font-size:9px!important;
+}
+.services-page .service-tile{
+  overflow:hidden;
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.services-page .service-tile:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 38px rgba(11,31,51,.12);
+  border-color:rgba(24,184,212,.38);
+}
+@media(prefers-reduced-motion:reduce){
+  .services-page .service-tile{transition:none}
+  .services-page .service-tile:hover{transform:none}
+}
