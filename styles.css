@@ -1136,3 +1136,177 @@ header .navlinks .navcta,
   border-radius:10px!important;
   white-space:nowrap;
 }
+
+/* =========================================================
+   FINAL SITE-WIDE UI / UX TYPE SYSTEM
+   Consistent with the Home page and applied to every page.
+   ========================================================= */
+:root{
+  --type-body:16px;
+  --type-small:14px;
+  --type-nav:16px;
+  --type-h3:21px;
+  --type-h2:clamp(36px,4vw,48px);
+}
+body{
+  font-family:Inter,Arial,sans-serif;
+  font-size:var(--type-body);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+header .nav{min-height:82px}
+header .logo img{width:245px;max-height:76px}
+header .navlinks{gap:28px;font-size:16px;font-weight:700}
+header .navlinks a{font-size:16px;line-height:1.25}
+header .navlinks .navcta{
+  min-height:52px;
+  padding:12px 20px!important;
+  font-size:16px!important;
+  line-height:1.25!important;
+  font-weight:700!important;
+}
+.eyebrow{
+  font-size:13px!important;
+  line-height:1.3!important;
+  letter-spacing:.09em;
+}
+.hero h1{
+  font-size:clamp(48px,5.4vw,68px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+}
+.lead{
+  font-size:18px;
+  line-height:1.65;
+}
+.section-head{max-width:780px}
+.section h2,.page-hero h1{
+  font-size:var(--type-h2);
+  line-height:1.08;
+  letter-spacing:-.035em;
+}
+.section h3,.card h3,.price h3,.service-card h2{
+  font-size:var(--type-h3);
+  line-height:1.2;
+}
+.section p,.card p,.service-card p{
+  font-size:16px;
+  line-height:1.6;
+}
+.btn{
+  min-height:52px;
+  padding:14px 22px;
+  font-size:16px;
+  line-height:1.25;
+  font-weight:700;
+}
+.card,.price,.service-card{padding:26px}
+.trust-row{font-size:14px}
+.page-hero p{font-size:18px;line-height:1.6}
+.form label,.form legend{font-size:14px}
+input,select,textarea{font-size:16px;line-height:1.45}
+footer{padding:52px 0}
+footer .footer-logo{width:300px;max-height:100px}
+.footer-grid{gap:44px}
+.footer-grid h3{font-size:16px;line-height:1.3;margin-bottom:14px}
+.footer-grid>div>a{font-size:15px;line-height:1.5;margin:9px 0}
+footer p{font-size:15px;line-height:1.7}
+.footer-bottom{font-size:14px;line-height:1.5}
+
+/* Services: bring all page-specific type back onto the same system */
+.services-page .services-hero-copy .eyebrow,
+.services-page .services-intro .eyebrow,
+.services-page .services-why .section-head .eyebrow,
+.services-page .health-check-copy .eyebrow{font-size:13px!important}
+.services-page .services-hero-copy h1{
+  font-size:clamp(48px,5vw,64px)!important;
+  line-height:1.02!important;
+  letter-spacing:-.045em!important;
+}
+.services-page .services-hero-copy p{
+  font-size:18px!important;
+  line-height:1.6!important;
+}
+.services-page .services-hero-copy .btn,
+.services-page .health-check-copy .btn{
+  min-height:52px!important;
+  padding:14px 22px!important;
+  font-size:16px!important;
+  line-height:1.25!important;
+  font-weight:700!important;
+  border-radius:10px!important;
+}
+.services-page .services-intro h2,
+.services-page .services-why .section-head h2{
+  font-size:clamp(36px,4vw,48px)!important;
+  line-height:1.08!important;
+}
+.services-page .services-intro .lead,
+.services-page .services-why .section-head .lead{
+  font-size:18px!important;
+  line-height:1.6!important;
+}
+.services-page .service-tile-body .eyebrow{font-size:12px!important}
+.services-page .service-tile-body h3{
+  font-size:21px!important;
+  line-height:1.2!important;
+  min-height:0!important;
+}
+.services-page .service-tile-body p{
+  font-size:15px!important;
+  line-height:1.55!important;
+  min-height:0!important;
+}
+.services-page .service-tile-body li{
+  font-size:14px!important;
+  line-height:1.45!important;
+}
+.services-page .service-tile-body .text-link{font-size:14px!important}
+.services-page .why-grid h3{font-size:18px!important}
+.services-page .why-grid p{font-size:14px!important;line-height:1.55!important}
+.services-page .health-check-copy h2{
+  font-size:clamp(42px,4.5vw,60px)!important;
+  line-height:1.03!important;
+}
+.services-page .health-check-copy p{
+  font-size:17px!important;
+  line-height:1.6!important;
+}
+.services-page .health-check-card strong{font-size:14px!important}
+.services-page .health-check-card .health-check-list li{font-size:13px!important}
+
+/* Keep legal/thank-you pages readable */
+.legal{font-size:16px;line-height:1.7}
+.legal h2{font-size:28px;line-height:1.2}
+.thank-you h1{font-size:clamp(40px,5vw,58px);line-height:1.05}
+
+/* Responsive type */
+@media(max-width:900px){
+  header .navlinks{gap:20px}
+  header .navlinks a{font-size:15px}
+  header .navlinks .navcta{font-size:15px!important}
+  .hero h1{font-size:clamp(44px,7vw,60px)}
+}
+@media(max-width:600px){
+  header .nav{min-height:70px}
+  header .logo img{width:195px;max-height:64px}
+  .hero{padding:60px 0}
+  .hero h1{font-size:42px}
+  .lead{font-size:17px}
+  .section{padding:60px 0}
+  .section h2,.page-hero h1{font-size:36px}
+  .section p,.card p,.service-card p{font-size:16px}
+  .btn{font-size:16px}
+  footer{padding:44px 0}
+  footer .footer-logo{width:290px}
+  .footer-grid>div>a{font-size:15px}
+  .services-page .services-hero-copy h1{font-size:42px!important}
+  .services-page .services-hero-copy p{font-size:16px!important}
+  .services-page .services-intro h2,
+  .services-page .services-why .section-head h2{font-size:34px!important}
+  .services-page .service-tile-body h3{font-size:20px!important}
+  .services-page .service-tile-body p{font-size:15px!important}
+  .services-page .health-check-copy h2{font-size:42px!important}
+  .services-page .health-check-copy p{font-size:16px!important}
+}
