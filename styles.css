@@ -1700,3 +1700,8 @@ header .navlinks .navcta{
 .services-page .service-visual-label{display:none!important}
 .services-page .service-visual-cloud,
 .services-page .service-visual-backup{background:#0b1f33!important}
+
+/* Remove service image overlay badges for clean imagery */
+.services-page .service-icon-badge{
+  display:none!important;
+}
