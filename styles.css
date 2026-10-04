@@ -1705,3 +1705,37 @@ header .navlinks .navcta{
 .services-page .service-icon-badge{
   display:none!important;
 }
+
+/* Purposeful content graphics — consistent MSP visual language */
+.ux-icon{
+  width:48px;
+  height:48px;
+  display:grid;
+  place-items:center;
+  margin-bottom:18px;
+  border-radius:14px;
+  background:rgba(24,184,212,.10);
+  color:#18b8d4;
+  border:1px solid rgba(24,184,212,.20);
+}
+.ux-icon svg{
+  width:25px;
+  height:25px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.card .ux-icon+h3{margin-top:0}
+.process .step{
+  position:relative;
+}
+.process .step .ux-icon{
+  margin-top:2px;
+}
+.price .ux-icon{
+  width:44px;
+  height:44px;
+  margin-bottom:14px;
+}
