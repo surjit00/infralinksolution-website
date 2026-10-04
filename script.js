@@ -65,7 +65,7 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
     const email = form.querySelector("[name='email']");
     const nameField = form.querySelector("[name='name']");
     const websiteField = form.querySelector("[name='company_website']");
-    const honeypot = form.querySelector("[name='website']");
+    const honeypot = form.querySelector("[name='company_fax']");
 
     if (!status || !button || !email) return;
 
