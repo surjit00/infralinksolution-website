@@ -7,10 +7,10 @@
   <polygon fill="#FFFFFF" points="217,153 267,122 267,267 217,236"/>
   <polygon fill="#18B8D4" points="300,104 336,126 336,209 300,188"/>
   <polygon fill="#18B8D4" points="267,190 375,248 375,293 267,234"/>
-  <text x="395" y="207" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" letter-spacing="-3">
+  <text x="395" y="207" font-family="Inter, Arial, Helvetica, sans-serif" font-size="96" font-weight="800" letter-spacing="-3">
     <tspan fill="#FFFFFF">Infra</tspan><tspan fill="#18B8D4">Link</tspan>
   </text>
-  <text x="396" y="254" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="400" letter-spacing="10" fill="#FFFFFF">SOLUTION</text>
-  <text x="397" y="282" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" letter-spacing="2.2" fill="#B9C9D4">MANAGED IT &amp; INFRASTRUCTURE SERVICES</text>
+  <text x="396" y="254" font-family="Inter, Arial, Helvetica, sans-serif" font-size="45" font-weight="700" letter-spacing="10" fill="#FFFFFF">SOLUTION</text>
+  <text x="397" y="282" font-family="Inter, Arial, Helvetica, sans-serif" font-size="24" font-weight="500" letter-spacing="2.2" fill="#B9C9D4">MANAGED IT &amp; INFRASTRUCTURE SERVICES</text>
 </g>
 </svg>
