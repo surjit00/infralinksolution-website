@@ -887,3 +887,33 @@ footer .footer-brand img{width:340px;height:auto;max-width:100%;object-fit:conta
 footer .footer-logo{width:340px;max-width:100%;height:auto;max-height:none;padding:14px 20px}
 @media(max-width:900px){.logo img{width:205px;max-height:72px}footer .footer-logo{width:320px}}
 @media(max-width:600px){.logo img{width:190px;max-height:68px}footer .footer-logo{width:290px}}
+
+/* Global header alignment — match the Home page across every page */
+header .nav{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+header .navlinks{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  font-weight:700;
+  color:#304657;
+}
+header .navlinks a{
+  font-size:16px;
+}
+header .navlinks .navcta{
+  font-size:16px!important;
+  padding:11px 16px;
+}
+@media(max-width:900px){
+  header .navlinks{display:none}
+  header .menu{display:block}
+}
+@media(max-width:600px){
+  header .nav{min-height:70px}
+}
