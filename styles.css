@@ -1965,3 +1965,44 @@ header .navlinks .navcta{
   }
 }
 
+
+
+/* Match header logo width to footer branding */
+header .logo img,
+.services-page header .logo img{
+  width:330px!important;
+  max-width:330px!important;
+  max-height:98px!important;
+  height:auto!important;
+}
+header .nav,
+.services-page header .nav{
+  min-height:104px!important;
+  height:104px!important;
+}
+@media(max-width:900px){
+  header .logo img,
+  .services-page header .logo img{
+    width:300px!important;
+    max-width:300px!important;
+    max-height:89px!important;
+  }
+  header .nav,
+  .services-page header .nav{
+    min-height:92px!important;
+    height:92px!important;
+  }
+}
+@media(max-width:600px){
+  header .logo img,
+  .services-page header .logo img{
+    width:300px!important;
+    max-width:300px!important;
+    max-height:88px!important;
+  }
+  header .nav,
+  .services-page header .nav{
+    min-height:90px!important;
+    height:90px!important;
+  }
+}
