@@ -38,7 +38,7 @@ document.querySelectorAll("form[data-lead-form]").forEach(f=>f.addEventListener(
   const s=f.querySelector(".form-status"),b=f.querySelector("button"),em=f.querySelector('[name="email"]'),w=f.querySelector('[name="company_website"]');
   if(!s||!b||!em)return;
 
-  em.value=em.value.replace(/\\u00a0/g," ").trim().replace(/\\s+/g,"");
+  em.value=em.value.replace(/\u00a0/g," ").trim().replace(/\s+/g,"");
   if(!/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(em.value)){
     setFormError(s,"Please enter a valid business email address, for example name@company.com.");
     em.focus();
@@ -56,8 +56,9 @@ document.querySelectorAll("form[data-lead-form]").forEach(f=>f.addEventListener(
   }
 
   const d=Object.fromEntries(new FormData(f).entries());
+  d.name=[d.first_name,d.last_name].filter(Boolean).join(" ").trim();
   d.services=[...f.querySelectorAll('input[name="services"]:checked')].map(x=>x.value);
-  if(d.website)return;
+  if(d.website){return;}
 
   b.disabled=true;
   b.setAttribute("aria-busy","true");
