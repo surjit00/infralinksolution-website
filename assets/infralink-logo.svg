@@ -1,9 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1084 361" width="1084" height="361" role="img" aria-labelledby="title desc">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1084 361" role="img" aria-labelledby="title desc">
 <title id="title">InfraLink Solution</title>
 <desc id="desc">InfraLink Solution — Managed IT &amp; Infrastructure Services</desc>
-<rect width="1084" height="361" fill="#ffffff"/>
-<text x="54" y="132" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#0B1F33">Infra<tspan fill="#18B8D4">Link</tspan></text>
-<text x="58" y="205" font-family="Arial, Helvetica, sans-serif" font-size="55" font-weight="800" letter-spacing="10" fill="#0B1F33">SOLUTION</text>
-<rect x="58" y="230" width="720" height="5" rx="2.5" fill="#18B8D4"/>
-<text x="58" y="278" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="600" letter-spacing="2.2" fill="#0B1F33">MANAGED IT &amp; INFRASTRUCTURE SERVICES</text>
+<g shape-rendering="geometricPrecision">
+  <polygon fill="#0B1F33" points="217,106 289,60 289,103 217,147"/>
+  <polygon fill="#0B1F33" points="217,153 267,122 267,267 217,236"/>
+  <polygon fill="#18B8D4" points="300,104 336,126 336,209 300,188"/>
+  <polygon fill="#18B8D4" points="267,190 375,248 375,293 267,234"/>
+  <text x="395" y="207" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" letter-spacing="-3">
+    <tspan fill="#0B1F33">Infra</tspan><tspan fill="#18B8D4">Link</tspan>
+  </text>
+  <text x="396" y="254" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="400" letter-spacing="14" fill="#0B1F33">SOLUTION</text>
+  <text x="397" y="282" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" letter-spacing="2.8" fill="#33495A">MANAGED IT &amp; INFRASTRUCTURE SERVICES</text>
+</g>
 </svg>
