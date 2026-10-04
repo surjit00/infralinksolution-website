@@ -63,12 +63,22 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
     const status = form.querySelector(".form-status");
     const button = form.querySelector("button[type='submit']");
     const email = form.querySelector("[name='email']");
+    const nameField = form.querySelector("[name='name']");
     const websiteField = form.querySelector("[name='company_website']");
     const honeypot = form.querySelector("[name='website']");
 
     if (!status || !button || !email) return;
 
-    email.value = email.value.replace(/\u00a0/g, " ").trim().replace(/\s+/g, "");
+    if (nameField) {
+      nameField.value = nameField.value.replace(/\u00a0/g, " ").trim().replace(/\s+/g, " ");
+      if (!nameField.value) {
+        setFormError(status, "Please enter your name.");
+        nameField.focus();
+        return;
+      }
+    }
+
+    email.value = email.value.replace(/\u00a0/g, " ").trim().replace(/\s+/g, " ");
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
       setFormError(status, "Please enter a valid email address, for example name@company.com.");
@@ -94,6 +104,7 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
     const data = Object.fromEntries(new FormData(form).entries());
     const fullName = [data.first_name, data.last_name].filter(Boolean).join(" ").trim();
     data.name = fullName || String(data.name || "").trim();
+    if (!data.name && nameField) data.name = nameField.value.trim();
     data.lead_type = form.dataset.leadForm || "contact";
     data.services = [...form.querySelectorAll("input[name='services']:checked")].map(input => input.value);
 
