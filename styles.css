@@ -1803,3 +1803,59 @@ header .nav,
     height:90px!important;
   }
 }
+
+
+/* Final header refinement — compact professional navigation */
+header .nav,
+.services-page header .nav{
+  min-height:82px!important;
+  height:82px!important;
+  display:flex!important;
+  align-items:center!important;
+}
+header .logo img,
+.services-page header .logo img{
+  width:270px!important;
+  max-width:270px!important;
+  max-height:76px!important;
+  height:auto!important;
+  object-fit:contain!important;
+}
+header .navlinks{
+  gap:26px!important;
+}
+header .navlinks a{
+  font-size:16px!important;
+  line-height:1.25!important;
+}
+header .navlinks .navcta{
+  min-height:48px!important;
+  padding:11px 18px!important;
+  margin-left:4px!important;
+}
+@media(max-width:900px){
+  header .nav,
+  .services-page header .nav{
+    min-height:76px!important;
+    height:76px!important;
+  }
+  header .logo img,
+  .services-page header .logo img{
+    width:230px!important;
+    max-width:230px!important;
+    max-height:68px!important;
+  }
+}
+@media(max-width:600px){
+  header .nav,
+  .services-page header .nav{
+    min-height:70px!important;
+    height:70px!important;
+  }
+  header .logo img,
+  .services-page header .logo img{
+    width:210px!important;
+    max-width:210px!important;
+    max-height:62px!important;
+  }
+}
