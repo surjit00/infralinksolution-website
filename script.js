@@ -92,7 +92,8 @@ document.querySelectorAll("form[data-lead-form]").forEach(form => {
     }
 
     const data = Object.fromEntries(new FormData(form).entries());
-    data.name = [data.first_name, data.last_name].filter(Boolean).join(" ").trim();
+    const fullName = [data.first_name, data.last_name].filter(Boolean).join(" ").trim();
+    data.name = fullName || String(data.name || "").trim();
     data.lead_type = form.dataset.leadForm || "contact";
     data.services = [...form.querySelectorAll("input[name='services']:checked")].map(input => input.value);
 
