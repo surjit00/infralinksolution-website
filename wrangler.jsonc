@@ -1,5 +1,1 @@
-{
-  "name": "infralinksolution-website",
-  "main": "src/worker.js",
-  "compatibility_date": "2026-10-04"
-}
+{"$schema":"node_modules/wrangler/config-schema.json","name":"infralinksolution-website","main":"src/worker.js","compatibility_date":"2026-10-04","assets":{"directory":"./public","binding":"ASSETS"}}
