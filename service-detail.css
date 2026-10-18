@@ -1,0 +1,38 @@
+/* Service detail pages — uses InfraLink's existing design tokens and shared components. */
+.service-detail-page{--detail-radius:20px}
+.service-detail-page .service-detail-hero{padding:62px 0 72px;background:linear-gradient(135deg,#fff 0%,#f3f9fb 100%);overflow:hidden}
+.service-detail-page .service-detail-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.service-detail-page .service-detail-copy h1{font-size:clamp(38px,4.5vw,60px);line-height:1.06;letter-spacing:-.045em;color:var(--navy);margin:18px 0}
+.service-detail-page .service-detail-copy .lead{font-size:18px}
+.service-detail-page .breadcrumbs{display:flex;gap:9px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:13px;font-weight:600;margin-bottom:27px}
+.service-detail-page .breadcrumbs a:hover,.service-detail-page .detail-back-link:hover{color:#087f98}
+.service-detail-page .detail-proof{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:12px;font-weight:700;margin-top:22px}
+.service-detail-page .service-detail-visual{position:relative;min-height:420px;border-radius:var(--detail-radius);overflow:hidden;box-shadow:0 20px 55px rgba(11,31,51,.14)}
+.service-detail-page .service-detail-visual:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(11,31,51,.8));pointer-events:none}
+.service-detail-page .service-detail-visual img{position:absolute;width:100%;height:100%;inset:0;object-fit:cover}
+.service-detail-page .detail-visual-caption{position:absolute;z-index:1;bottom:24px;left:25px;right:25px;color:white;display:grid;gap:4px}
+.service-detail-page .detail-visual-caption strong{font-size:22px;line-height:1.2}
+.service-detail-page .detail-visual-caption span{font-size:14px;color:#e2edf2}
+.service-detail-page .detail-two-column{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:start}
+.service-detail-page .detail-list-panel{background:#fff;border:1px solid var(--line);border-radius:17px;padding:27px}
+.service-detail-page .detail-list-panel ul{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.service-detail-page .detail-list-panel li{position:relative;padding-left:31px;color:var(--muted)}
+.service-detail-page .detail-list-panel li:before{content:"!";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;background:#e8f8fb;color:#087f98;font-size:12px;font-weight:900}
+.service-detail-page .detail-cards-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.service-detail-page .detail-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 8px 25px rgba(11,31,51,.04);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.service-detail-page .detail-card:hover{transform:translateY(-3px);border-color:#b7eaf2;box-shadow:0 14px 32px rgba(11,31,51,.08)}
+.service-detail-page .detail-card-mark{display:grid;place-items:center;width:38px;height:38px;background:#e6f8fb;color:#087f98;border-radius:11px;font-weight:900;margin-bottom:15px}
+.service-detail-page .detail-card h3,.service-detail-page .detail-benefit h3{font-size:18px;line-height:1.3;color:var(--navy);margin:0 0 9px}
+.service-detail-page .detail-card p,.service-detail-page .detail-benefit p{margin:0;color:var(--muted);font-size:15px}
+.service-detail-page .detail-benefit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.service-detail-page .detail-benefit{display:flex;gap:17px;align-items:flex-start;padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.service-detail-page .detail-benefit-number{font-size:14px;font-weight:900;color:#087f98;background:#e6f8fb;border-radius:10px;padding:9px 10px}
+.service-detail-page .detail-final-cta{padding:70px 0;background:var(--navy);color:#fff}
+.service-detail-page .detail-final-grid{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:center}
+.service-detail-page .detail-final-grid h2{font-size:clamp(32px,4vw,46px);line-height:1.1;color:#fff;margin:12px 0 16px;max-width:760px}
+.service-detail-page .detail-final-grid p{max-width:760px;color:#c4d3dc;font-size:17px}
+.service-detail-page .detail-final-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px;min-width:245px}
+.service-detail-page .detail-back-link{color:#d6e4eb;font-size:14px;font-weight:700}
+@media(max-width:980px){.service-detail-page .service-detail-hero-grid{grid-template-columns:1fr 1fr;gap:28px}.service-detail-page .service-detail-visual{min-height:360px}.service-detail-page .detail-cards-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-detail-page .detail-two-column{gap:28px}.service-detail-page .detail-final-grid{grid-template-columns:1fr;gap:20px}.service-detail-page .detail-final-actions{flex-direction:row;flex-wrap:wrap;align-items:center}}
+@media(max-width:720px){.service-detail-page .service-detail-hero{padding:36px 0 48px}.service-detail-page .service-detail-hero-grid,.service-detail-page .detail-two-column{grid-template-columns:1fr}.service-detail-page .service-detail-copy h1{font-size:clamp(35px,10vw,48px)}.service-detail-page .service-detail-visual{min-height:290px;order:-1}.service-detail-page .breadcrumbs{margin-bottom:20px}.service-detail-page .detail-cards-grid,.service-detail-page .detail-benefit-grid{grid-template-columns:1fr}.service-detail-page .detail-final-cta{padding:52px 0}.service-detail-page .detail-final-actions{flex-direction:column;align-items:flex-start}.service-detail-page .detail-proof{gap:10px}.service-detail-page .detail-list-panel{padding:22px}}
+@media(prefers-reduced-motion:reduce){.service-detail-page .detail-card{transition:none}.service-detail-page .detail-card:hover{transform:none}}
